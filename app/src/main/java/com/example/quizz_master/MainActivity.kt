@@ -4,44 +4,38 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.quizz_master.ui.theme.QuizzmasterTheme
+import androidx.compose.ui.graphics.Color
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        val questions = loadQuestions(this)
         setContent {
-            QuizzmasterTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            DisplayQuestionScreen(questions)
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+//Farben
+val myBlue = Color.hsv(196f, 1f, 1f)
+val myDarkBlue = Color.hsv(200f, 1f, 0.75f)
+val myOrange = Color.hsv(35f, 1f, 1f)
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    QuizzmasterTheme {
-        Greeting("Android")
-    }
+fun AppPreview() {
+    val demoQuestion = Question(
+        1,
+        "Was ist die Hauptstadt von Australien?",
+        listOf(
+            Answer("Canberra", true),
+            Answer("Sydney", false),
+            Answer("Melbourne", false)
+        )
+    )
+    val demoQuestions = listOf(demoQuestion)
+    DisplayQuestionScreen(demoQuestions)
 }

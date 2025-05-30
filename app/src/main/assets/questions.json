@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "question": "Was ist die Hauptstadt von Australien?",
+    "answers": [
+      {"answer": "Canberra", "isCorrect": true},
+      {"answer": "Sydney", "isCorrect": false},
+      {"answer": "Melbourne", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Welche der folgenden Gattungen zählt nicht zu den Menschenaffen?",
+    "answers": [
+      {"answer": "Gorillas", "isCorrect": false},
+      {"answer": "Orang-Utans", "isCorrect": false},
+      {"answer": "Paviane", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Der Superbowl ist das Finale welcher amerikanischen Profiliga?",
+    "answers": [
+      {"answer": "NHL", "isCorrect": false},
+      {"answer": "NFL", "isCorrect": true},
+      {"answer": "NBA", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Wie viele Planeten hat unser Sonnensystem?",
+    "answers": [
+      {"answer": "8", "isCorrect": true},
+      {"answer": "9", "isCorrect": false},
+      {"answer": "7", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Welches chemische Element hat das Symbol 'O'?",
+    "answers": [
+      {"answer": "Osmium", "isCorrect": false},
+      {"answer": "Ozon", "isCorrect": false},
+      {"answer": "Sauerstoff", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Wer schrieb 'Faust'?",
+    "answers": [
+      {"answer": "Schiller", "isCorrect": false},
+      {"answer": "Goethe", "isCorrect": true},
+      {"answer": "Lessing", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Welches Tier ist das größte lebende Landraubtier?",
+    "answers": [
+      {"answer": "Löwe", "isCorrect": false},
+      {"answer": "Eisbär", "isCorrect": true},
+      {"answer": "Grizzlybär", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Welcher Planet ist der sonnennächste?",
+    "answers": [
+      {"answer": "Merkur", "isCorrect": true},
+      {"answer": "Venus", "isCorrect": false},
+      {"answer": "Mars", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Wie viele Kontinente gibt es auf der Erde?",
+    "answers": [
+      {"answer": "5", "isCorrect": false},
+      {"answer": "6", "isCorrect": false},
+      {"answer": "7", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Welcher Ozean ist der größte?",
+    "answers": [
+      {"answer": "Atlantischer Ozean", "isCorrect": false},
+      {"answer": "Indischer Ozean", "isCorrect": false},
+      {"answer": "Pazifischer Ozean", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Welches Land gewann die Fußball-WM 2014?",
+    "answers": [
+      {"answer": "Brasilien", "isCorrect": false},
+      {"answer": "Deutschland", "isCorrect": true},
+      {"answer": "Spanien", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Was ist die Quadratwurzel von 144?",
+    "answers": [
+      {"answer": "11", "isCorrect": false},
+      {"answer": "12", "isCorrect": true},
+      {"answer": "13", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Wie heißt der höchste Berg der Welt?",
+    "answers": [
+      {"answer": "K2", "isCorrect": false},
+      {"answer": "Mount Everest", "isCorrect": true},
+      {"answer": "Kangchendzönga", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Wer malte die 'Mona Lisa'?",
+    "answers": [
+      {"answer": "Leonardo da Vinci", "isCorrect": true},
+      {"answer": "Michelangelo", "isCorrect": false},
+      {"answer": "Raphael", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Welcher dieser Staaten gehört nicht zur Europäischen Union?",
+    "answers": [
+      {"answer": "Norwegen", "isCorrect": true},
+      {"answer": "Schweden", "isCorrect": false},
+      {"answer": "Portugal", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Was ergibt 5 hoch 2?",
+    "answers": [
+      {"answer": "10", "isCorrect": false},
+      {"answer": "25", "isCorrect": true},
+      {"answer": "20", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Welches dieser Tiere ist ein Säugetier?",
+    "answers": [
+      {"answer": "Pinguin", "isCorrect": false},
+      {"answer": "Frosch", "isCorrect": false},
+      {"answer": "Delfin", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 18,
+    "question": "In welchem Jahr fiel die Berliner Mauer?",
+    "answers": [
+      {"answer": "1990", "isCorrect": false},
+      {"answer": "1989", "isCorrect": true},
+      {"answer": "1987", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Welche Währung benutzt man in Japan?",
+    "answers": [
+      {"answer": "Yuan", "isCorrect": false},
+      {"answer": "Yen", "isCorrect": true},
+      {"answer": "Won", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Wie viele Ecken hat ein Würfel?",
+    "answers": [
+      {"answer": "6", "isCorrect": false},
+      {"answer": "8", "isCorrect": true},
+      {"answer": "12", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Was ist die kleinste Einheit des Lebens?",
+    "answers": [
+      {"answer": "Zelle", "isCorrect": true},
+      {"answer": "Atom", "isCorrect": false},
+      {"answer": "Organ", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 22,
+    "question": "Wie nennt man einen zehnseitigen Würfel?",
+    "answers": [
+      {"answer": "Dodekaeder", "isCorrect": false},
+      {"answer": "Dekawürfel", "isCorrect": false},
+      {"answer": "Dekader", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Welcher Komponist war im Barock berühmt?",
+    "answers": [
+      {"answer": "Bach", "isCorrect": true},
+      {"answer": "Beethoven", "isCorrect": false},
+      {"answer": "Mozart", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Was bedeutet das lateinische 'Carpe Diem'?",
+    "answers": [
+      {"answer": "Nutze die Nacht", "isCorrect": false},
+      {"answer": "Nutze den Tag", "isCorrect": true},
+      {"answer": "Genieß das Leben", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Welches Organ pumpt Blut durch den menschlichen Körper?",
+    "answers": [
+      {"answer": "Lunge", "isCorrect": false},
+      {"answer": "Herz", "isCorrect": true},
+      {"answer": "Leber", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Wie nennt man ein fünfseitiges Vieleck?",
+    "answers": [
+      {"answer": "Hexagon", "isCorrect": false},
+      {"answer": "Pentagon", "isCorrect": true},
+      {"answer": "Oktagon", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Wer war der erste Mensch im Weltall?",
+    "answers": [
+      {"answer": "Neil Armstrong", "isCorrect": false},
+      {"answer": "Juri Gagarin", "isCorrect": true},
+      {"answer": "Buzz Aldrin", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 28,
+    "question": "In welcher Einheit wird elektrische Spannung gemessen?",
+    "answers": [
+      {"answer": "Ampere", "isCorrect": false},
+      {"answer": "Volt", "isCorrect": true},
+      {"answer": "Ohm", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Welcher dieser Begriffe bezeichnet eine Programmiersprache?",
+    "answers": [
+      {"answer": "Python", "isCorrect": true},
+      {"answer": "Komodo", "isCorrect": false},
+      {"answer": "Panther", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Welcher Kontinent ist flächenmäßig der größte?",
+    "answers": [
+      {"answer": "Afrika", "isCorrect": false},
+      {"answer": "Asien", "isCorrect": true},
+      {"answer": "Nordamerika", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Welche Sprache hat weltweit die meisten Muttersprachler?",
+    "answers": [
+      {"answer": "Englisch", "isCorrect": false},
+      {"answer": "Spanisch", "isCorrect": false},
+      {"answer": "Chinesisch (Mandarin)", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+    "answers": [
+      {"answer": "Konrad Adenauer", "isCorrect": true},
+      {"answer": "Helmut Kohl", "isCorrect": false},
+      {"answer": "Willy Brandt", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Was ist H2O?",
+    "answers": [
+      {"answer": "Kohlendioxid", "isCorrect": false},
+      {"answer": "Wasser", "isCorrect": true},
+      {"answer": "Wasserstoff", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Welche Farbe entsteht durch das Mischen von Blau und Gelb?",
+    "answers": [
+      {"answer": "Grün", "isCorrect": true},
+      {"answer": "Lila", "isCorrect": false},
+      {"answer": "Orange", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Was ist der kleinste gemeinsame Nenner von 4 und 6?",
+    "answers": [
+      {"answer": "12", "isCorrect": true},
+      {"answer": "6", "isCorrect": false},
+      {"answer": "2", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Wie viele Bundesländer hat Deutschland?",
+    "answers": [
+      {"answer": "14", "isCorrect": false},
+      {"answer": "16", "isCorrect": true},
+      {"answer": "18", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Was ist die Hauptstadt von Kanada?",
+    "answers": [
+      {"answer": "Toronto", "isCorrect": false},
+      {"answer": "Vancouver", "isCorrect": false},
+      {"answer": "Ottawa", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 38,
+    "question": "In welchem Jahr begann der Zweite Weltkrieg?",
+    "answers": [
+      {"answer": "1939", "isCorrect": true},
+      {"answer": "1941", "isCorrect": false},
+      {"answer": "1936", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Wie nennt man das Ergebnis einer Multiplikation?",
+    "answers": [
+      {"answer": "Produkt", "isCorrect": true},
+      {"answer": "Summe", "isCorrect": false},
+      {"answer": "Quotient", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Welche dieser Zahlen ist eine Primzahl?",
+    "answers": [
+      {"answer": "21", "isCorrect": false},
+      {"answer": "17", "isCorrect": true},
+      {"answer": "20", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Wie viele Nullen hat eine Milliarde?",
+    "answers": [
+      {"answer": "6", "isCorrect": false},
+      {"answer": "9", "isCorrect": true},
+      {"answer": "12", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Welcher Planet hat einen Ring aus Eis und Gestein?",
+    "answers": [
+      {"answer": "Jupiter", "isCorrect": false},
+      {"answer": "Saturn", "isCorrect": true},
+      {"answer": "Mars", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Wer erfand die Glühbirne (kommerziell erfolgreich)?",
+    "answers": [
+      {"answer": "Nikola Tesla", "isCorrect": false},
+      {"answer": "Thomas Edison", "isCorrect": true},
+      {"answer": "Alexander Graham Bell", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Welches Land liegt nicht in Afrika?",
+    "answers": [
+      {"answer": "Ghana", "isCorrect": false},
+      {"answer": "Kenia", "isCorrect": false},
+      {"answer": "Laos", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 45,
+    "question": "Welche Figur war kein griechischer Gott?",
+    "answers": [
+      {"answer": "Zeus", "isCorrect": false},
+      {"answer": "Hermes", "isCorrect": false},
+      {"answer": "Thor", "isCorrect": true}
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Was ist ein Synonym für 'schnell'?",
+    "answers": [
+      {"answer": "rasch", "isCorrect": true},
+      {"answer": "stark", "isCorrect": false},
+      {"answer": "hoch", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Was ergibt 100 geteilt durch 4?",
+    "answers": [
+      {"answer": "25", "isCorrect": true},
+      {"answer": "20", "isCorrect": false},
+      {"answer": "30", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Wer ist der Autor von 'Harry Potter'?",
+    "answers": [
+      {"answer": "J.R.R. Tolkien", "isCorrect": false},
+      {"answer": "J.K. Rowling", "isCorrect": true},
+      {"answer": "Stephen King", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Was zeigt ein Thermometer an?",
+    "answers": [
+      {"answer": "Luftfeuchtigkeit", "isCorrect": false},
+      {"answer": "Temperatur", "isCorrect": true},
+      {"answer": "Luftdruck", "isCorrect": false}
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Welcher Kontinent hat die meisten Länder?",
+    "answers": [
+      {"answer": "Asien", "isCorrect": false},
+      {"answer": "Afrika", "isCorrect": true},
+      {"answer": "Europa", "isCorrect": false}
+    ]
+  }
+]
