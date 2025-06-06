@@ -6,7 +6,7 @@ import android.util.Log
 import kotlinx.serialization.json.Json
 import java.io.IOException
 
-//Data class representing a question
+//Diese Datenklasse repräsentiert eine Frage
 @Serializable
 data class Question(
     val id: Int,
@@ -14,15 +14,15 @@ data class Question(
     val answers: List<Answer>
 )
 
-//Data class representing an answer
+//Diese Datenklasse repräsentiert eine Antwort
 @Serializable
 data class Answer(
     val answer: String,
     val isCorrect: Boolean
 )
 
-//function that loads json data
-fun loadQuestions(context: Context): List<Question> {
+//Funktion um die Fragen aus einer JSON-Datei auszulesen und zu deserialisieren
+fun loadQuestions(context: Context): MutableList<Question> {
     return try {
         val json = context.assets.open("questions.json")
             .bufferedReader()
@@ -32,11 +32,9 @@ fun loadQuestions(context: Context): List<Question> {
 
     } catch (e: IOException) {
         Log.e("QuizLoader", "Error reading from assets", e)
-        emptyList()
+        mutableListOf()
     } catch (e: SerializationException) {
         Log.e("QuizLoader", "Error parsing JSON", e)
-        emptyList()
+        mutableListOf()
     }
 }
-
-

@@ -36,6 +36,6 @@ fun AppPreview() {
             Answer("Melbourne", false)
         )
     )
-    val demoQuestions = listOf(demoQuestion)
+    val demoQuestions = mutableListOf(demoQuestion)
     DisplayQuestionScreen(demoQuestions)
 }
