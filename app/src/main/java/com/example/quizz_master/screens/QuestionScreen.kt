@@ -1,4 +1,4 @@
-package com.example.quizz_master
+package com.example.quizz_master.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,6 +17,7 @@ import androidx.compose.runtime.MutableIntState
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -24,12 +25,18 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
+import com.example.quizz_master.Answer
+import com.example.quizz_master.Question
+import com.example.quizz_master.R
+import com.example.quizz_master.myBlue
+import com.example.quizz_master.myDarkBlue
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 /*Der Hauptteil des Spiels. Diese Funktion bekommt eine Liste an Fragen übergeben und
 * konstruiert die UI*/
 @Composable
-fun DisplayQuestionScreen(questions: MutableList<Question>) {
+fun QuestionScreen(questions: MutableList<Question>) {
 
     //die Anzahl an bereits beantworteten Fragen
     val questionCount = remember { mutableIntStateOf(1) }
@@ -46,7 +53,6 @@ fun DisplayQuestionScreen(questions: MutableList<Question>) {
         modifier = Modifier.fillMaxSize()
     ) {
         Header(score.intValue) //zeige den score im Header an
-
         DisplayQuestion(
             currentQuestion.value, //zeige die aktuelle Frage an
 
@@ -58,6 +64,12 @@ fun DisplayQuestionScreen(questions: MutableList<Question>) {
                 questions.remove(currentQuestion.value)
                 //wähle eine neue, zufällige Frage aus der Liste aus
                 currentQuestion.value = questions[questions.indices.random()]
+            },
+
+            //wird zusätzlich ausgeführt, wenn eine Frage korrekt beantwortet wird
+            onCorrectAnswer = {
+                //erhöhe den score um 1
+                score.intValue++
             }
         )
         Footer(questionCount) //zeigt an, wie viele Fragen beantwortet wurden
@@ -69,28 +81,57 @@ fun DisplayQuestionScreen(questions: MutableList<Question>) {
 @Composable
 fun DisplayQuestion(
     question: Question,
-    onAnswered: () -> Unit
+    onAnswered: () -> Unit,
+    onCorrectAnswer: () -> Unit
 ) {
-    Column (
+    val selectedAnswer = remember { mutableStateOf<Answer?>(null) }
+    val isAnswered = remember { mutableStateOf(false) }
+
+    // Needed for launching the delay
+    val scope = rememberCoroutineScope()
+
+    Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
             .height(400.dp)
             .padding(start = 20.dp, end = 20.dp)
-    ){
-        //der Text für die Frage
+    ) {
         Text(
             question.question,
             fontSize = 25.sp,
             modifier = Modifier.padding(top = 30.dp)
         )
-        //generiert einen Button für jede Antwortmöglichket
+
         Column {
-            for(answer: Answer in question.answers) {
+            for (answer: Answer in question.answers) {
+                // Determine button color
+                val buttonColor = when {
+                    !isAnswered.value -> myBlue
+                    selectedAnswer.value == answer && answer.isCorrect -> Color.Green
+                    selectedAnswer.value == answer && !answer.isCorrect -> Color.Red
+                    else -> myBlue
+                }
+
                 Button(
-                    onClick = { onAnswered() },
+                    onClick = {
+                        if (!isAnswered.value) {
+                            selectedAnswer.value = answer
+                            isAnswered.value = true
+                            if (answer.isCorrect) {
+                                onCorrectAnswer()
+                            }
+
+                            scope.launch {
+                                delay(1000L) // wait 1 second
+                                onAnswered() // next question
+                                selectedAnswer.value = null
+                                isAnswered.value = false
+                            }
+                        }
+                    },
                     colors = buttonColors(
-                        containerColor = myBlue
+                        containerColor = buttonColor
                     ),
                     modifier = Modifier
                         .width(300.dp)
@@ -98,8 +139,9 @@ fun DisplayQuestion(
                         .padding(bottom = 10.dp)
                 ) {
                     Text(
-                    answer.answer,
-                    fontSize = 18.sp,)
+                        answer.answer,
+                        fontSize = 18.sp
+                    )
                 }
             }
         }

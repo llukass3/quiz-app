@@ -7,14 +7,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.graphics.Color
+import com.example.quizz_master.screens.QuestionScreen
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         val questions = loadQuestions(this)
         setContent {
-            DisplayQuestionScreen(questions)
+            QuestionScreen(questions)
         }
     }
 }
@@ -24,6 +26,7 @@ val myBlue = Color.hsv(196f, 1f, 1f)
 val myDarkBlue = Color.hsv(200f, 1f, 0.75f)
 val myOrange = Color.hsv(35f, 1f, 1f)
 
+//Preview
 @Preview(showBackground = true)
 @Composable
 fun AppPreview() {
@@ -37,5 +40,5 @@ fun AppPreview() {
         )
     )
     val demoQuestions = mutableListOf(demoQuestion)
-    DisplayQuestionScreen(demoQuestions)
+    QuestionScreen(demoQuestions)
 }
