@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         val questions = loadQuestions(this)
         setContent {
-            QuestionScreen(questions)
+            Navigation(questions)
         }
     }
 }
