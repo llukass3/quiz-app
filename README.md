@@ -1,6 +1,7 @@
 # Quiz-App
 
 DISCLAIMER: wegen eines Bugs sind Anfangs- und Endscreen leider nicht implementiert.
+apk datei in release-ordner.
 Eine einfache Quiz-App für Android, die dem Nutzer Fragen stellt und die Antworten auswertet.
 
 ## Funktionsweise
